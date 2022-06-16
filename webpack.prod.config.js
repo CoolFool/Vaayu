@@ -1,14 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const webpack = require("webpack");
 const CompressionPlugin = require("compression-webpack-plugin");
-const ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
 require("dotenv").config()
 
 module.exports = {
-    mode:  'development',
+    mode:  'production',
     entry: path.resolve(__dirname, './src/pages/index.js'),
     devtool: 'inline-source-map',
     target: 'web',
@@ -19,10 +17,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: require.resolve('babel-loader'),
-                        options: {
-                            plugins:[require.resolve('react-refresh/babel')]
-                        },
+                        loader: require.resolve('babel-loader')
                     },
                 ],
             },
@@ -47,10 +42,7 @@ module.exports = {
             'process.env': JSON.stringify(process.env)
         }),
         new FaviconsWebpackPlugin('logo.png'),
-        new CompressionPlugin(),
-        new BundleAnalyzerPlugin(),
-        new ReactRefreshWebpackPlugin()
-
+        new CompressionPlugin()
     ],
     resolve: {
         extensions: ['*', '.js', '.jsx'],
@@ -58,9 +50,5 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: 'bundle.js',
-    },
-    devServer: {
-        static: path.resolve(__dirname, './dist'),
-        hot: true
     }
 };
