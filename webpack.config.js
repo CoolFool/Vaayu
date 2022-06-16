@@ -46,7 +46,7 @@ module.exports = {
         new webpack.DefinePlugin({
             'process.env': JSON.stringify(process.env)
         }),
-        new FaviconsWebpackPlugin('logo.png'),
+        new FaviconsWebpackPlugin('static/logo.png'),
         new CompressionPlugin(),
         new BundleAnalyzerPlugin(),
         new ReactRefreshWebpackPlugin()

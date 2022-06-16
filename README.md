@@ -1,5 +1,5 @@
 <div align="center" id = "top">
-  <img src="vaayu.png"  alt="vaayu logo"/>
+  <img src="static/vaayu.png"  alt="vaayu logo"/>
   <h3>Interactive map for visualizing air quality index</h3> 
 </div>
 
@@ -23,7 +23,7 @@
 
 ## Screenshot
 
-| ![Screenshot](screenshot.png) |                                
+| ![Screenshot](static/screenshot.png) |                                
 |-------------------------------|
 | Vaayu Screenshot              |                                                                                                                                                            
 
