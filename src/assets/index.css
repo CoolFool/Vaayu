@@ -1,0 +1,22 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.mapboxgl-popup-content{
+    padding: 3px 3px 3px;
+    border-radius: 9px;
+    background-color: #666666;
+}
+.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip{
+    border-top-color: #666666;
+}
+
+.mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
+    border-bottom-color: #666666;
+}
