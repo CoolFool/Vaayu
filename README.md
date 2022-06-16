@@ -13,20 +13,19 @@
 - [Authors](#authors)
 - [License](#license)
 
-## Screenshot
-
-| ![Screenshot](screenshot.png) |                                
-|-------------------------------|
-| Vaayu Screenshot              |                                                                                                                                                            
-
-
-
 ## Introduction
 
 - Vaayu is an interactive world map for getting air quality index of any location on earth by clicking on the map
 - It even gives advanced statistics like dew, pm2.5, no2 etc..
 - Visit [vaayu.coolfool.me](https://vaayu.coolfool.me) for interacting with the map
 - You can [deploy](#deploy) your own instance on aws-amplify or netlify with one click deploy
+
+
+## Screenshot
+
+| ![Screenshot](screenshot.png) |                                
+|-------------------------------|
+| Vaayu Screenshot              |                                                                                                                                                            
 
 
 ## Environment Variables
