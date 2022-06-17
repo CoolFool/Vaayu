@@ -1,14 +1,14 @@
 {
   "name": "vaayu",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Interactive map for visualizing air quality index",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production --config webpack.prod.config.js",
     "start": "webpack-dev-server"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Aseem Manna <hello@aseemmanna.me>",
+  "license": "MIT License",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
