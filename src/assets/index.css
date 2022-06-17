@@ -20,3 +20,11 @@ body {
 .mapboxgl-popup-anchor-top .mapboxgl-popup-tip{
     border-bottom-color: #666666;
 }
+
+.mapboxgl-popup-anchor-left .mapboxgl-popup-tip{
+    border-right-color: #666666;
+}
+
+.mapboxgl-popup-anchor-right .mapboxgl-popup-tip{
+    border-left-color: #666666;
+}
